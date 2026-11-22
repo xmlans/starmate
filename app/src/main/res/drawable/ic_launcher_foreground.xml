@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自适应图标前景：安全区居中的一颗圆润四角星，旁边一颗小星。 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,32 C54,46 60,52 74,54 C60,56 54,62 52,76 C50,62 44,56 30,54 C44,52 50,46 52,32 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M72,34 C72.8,39 75,41.2 80,42 C75,42.8 72.8,45 72,50 C71.2,45 69,42.8 64,42 C69,41.2 71.2,39 72,34 Z" />
+</vector>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mobileuse_settings_title">手机操作（Beta）</string>
+
+    <!-- 无障碍服务 -->
+    <string name="mobileuse_service_label">星伴手机操作</string>
+    <string name="mobileuse_service_description">你在聊天里请她帮忙时，星伴可以通过这项服务替你操作手机。任务进行中，它会读取你允许的应用的屏幕内容，把这些内容发给你配置的模型服务商，并替你点击、输入和滑动。它一定不会操作银行、支付、钱包、证券理财、加密货币类应用，以及系统设置、应用商店、短信、验证器和密码管理器；出现付款页面或密码键盘时会立即停止。没有任务时它什么也不做。每次任务期间，屏幕上都会有一个带“停止”按钮的悬浮条。</string>
+
+    <!-- 悬浮层 -->
+    <string name="mobileuse_overlay_running">星伴正在操作</string>
+    <string name="mobileuse_overlay_stop">停止</string>
+    <string name="mobileuse_overlay_confirm_title">星伴需要你确认</string>
+    <string name="mobileuse_overlay_yes">是</string>
+    <string name="mobileuse_overlay_no">否</string>
+
+    <!-- 实验室页 -->
+    <string name="mobileuse_lab_intro">实验性功能。你在聊天里提出要求时，她可以打开你允许的应用，替你点击、输入和滑动。每次任务开始前都要你确认，随时可以停止。</string>
+    <string name="mobileuse_lab_enable">允许手机操作</string>
+    <string name="mobileuse_lab_enable_summary">你提出要求时，她可以提出替你在手机上操作</string>
+    <string name="mobileuse_lab_enable_needs_risk">请先阅读风险说明</string>
+    <string name="mobileuse_lab_needs_android11">需要 Android 11 或更高版本</string>
+    <string name="mobileuse_lab_stop_running">停止当前任务</string>
+    <string name="mobileuse_lab_section_setup">设置</string>
+    <string name="mobileuse_lab_service">无障碍服务</string>
+    <string name="mobileuse_lab_service_on">已连接</string>
+    <string name="mobileuse_lab_service_off">未开启。点这里打开无障碍设置，开启“星伴手机操作”</string>
+    <string name="mobileuse_lab_restricted_title">开不了无障碍服务？</string>
+    <string name="mobileuse_lab_restricted_summary">Android 13 及以上，不是从应用商店安装的应用默认处于“受限设置”。打开应用信息，点右上角 ⋮，选“允许受限制的设置”，再回来开启。</string>
+    <string name="mobileuse_lab_allowlist_empty">还没有允许任何应用。添加之前，她什么都操作不了</string>
+    <string name="mobileuse_lab_allowlist_count">已允许 %1$d 个应用</string>
+    <string name="mobileuse_lab_section_limits">单次任务上限</string>
+    <string name="mobileuse_lab_limit_steps">最多 %1$d 步</string>
+    <string name="mobileuse_lab_limit_minutes">最多 %1$d 分钟</string>
+    <string name="mobileuse_lab_limit_tokens">最多 %1$dk token</string>
+    <string name="mobileuse_lab_limits_note">达到任意一项上限，任务就会结束。步数和时长只能调低。</string>
+    <string name="mobileuse_lab_section_more">更多</string>
+    <string name="mobileuse_lab_log_summary">每次任务的每一步，以及安全守卫的结论</string>
+    <string name="mobileuse_lab_risk_accepted">已阅读并同意</string>
+    <string name="mobileuse_lab_risk_unread">尚未阅读</string>
+    <string name="mobileuse_lab_how_to_stop">怎样停止任务</string>
+    <string name="mobileuse_lab_how_to_stop_summary">点屏幕顶部悬浮条上的“停止”、熄灭屏幕，或者关闭无障碍服务。</string>
+
+    <!-- 白名单 -->
+    <string name="mobileuse_allowlist_title">允许的应用</string>
+    <string name="mobileuse_allowlist_intro">她只能操作你在这里勾选的应用。置灰的应用一律不允许操作，也不能添加。\n\n带支付功能的应用（聊天、购物、外卖、打车等）请谨慎勾选：她认出付款页面会停下，点“支付”“购买”这类按钮前也会先问你，但无法保证认出所有收银台。建议不勾选，或先关掉这些应用的免密支付。</string>
+    <string name="mobileuse_allowlist_empty">没有找到应用</string>
+    <string name="mobileuse_block_self">星伴自己</string>
+    <string name="mobileuse_block_system">系统设置、安装器、应用商店或权限类应用，一律不允许</string>
+    <string name="mobileuse_block_launcher">桌面应用</string>
+    <string name="mobileuse_block_sms">短信应用，一律不允许</string>
+    <string name="mobileuse_block_unknown">无法确认这是什么应用，不允许操作</string>
+    <string name="mobileuse_block_payment">支付或钱包类应用，一律不允许</string>
+    <string name="mobileuse_block_bank">银行类应用，一律不允许</string>
+    <string name="mobileuse_block_broker">证券、基金或理财类应用，一律不允许</string>
+    <string name="mobileuse_block_crypto">加密货币类应用，一律不允许</string>
+    <string name="mobileuse_block_authenticator">验证器类应用，一律不允许</string>
+    <string name="mobileuse_block_password">密码管理类应用，一律不允许</string>
+
+    <!-- 操作日志 -->
+    <string name="mobileuse_log_title">操作日志</string>
+    <string name="mobileuse_log_clear">清空日志</string>
+    <string name="mobileuse_log_clear_title">清空操作日志？</string>
+    <string name="mobileuse_log_clear_text">这台手机上记录的所有任务和步骤都会被删除，无法撤销。</string>
+    <string name="mobileuse_log_empty">还没有任务</string>
+    <string name="mobileuse_log_empty_desc">她在手机上替你操作时，每一步都会记在这里。</string>
+    <string name="mobileuse_log_no_steps">没有记录到步骤</string>
+    <string name="mobileuse_log_outcome_running">进行中或被中断</string>
+    <string name="mobileuse_log_outcome_done">已完成</string>
+    <string name="mobileuse_log_outcome_halt">被安全守卫中止（%1$s）</string>
+    <string name="mobileuse_log_outcome_limit">达到上限</string>
+    <string name="mobileuse_log_outcome_stopped">已停止</string>
+    <string name="mobileuse_log_outcome_failed">失败</string>
+    <string name="mobileuse_verdict_allow">放行</string>
+    <string name="mobileuse_verdict_failed">放行，但执行失败</string>
+    <string name="mobileuse_verdict_confirm">询问了你</string>
+    <string name="mobileuse_verdict_halt">拦截</string>
+    <string name="mobileuse_verdict_user_approved">你同意了</string>
+    <string name="mobileuse_verdict_user_declined">你拒绝了</string>
+    <string name="mobileuse_verdict_user_yes">你回答“是”</string>
+    <string name="mobileuse_verdict_user_no">你回答“否”</string>
+    <string name="mobileuse_verdict_done">完成</string>
+
+    <!-- 风险说明 -->
+    <string name="mobileuse_risk_title">开启之前请读一读</string>
+    <string name="mobileuse_risk_lead">手机操作会把你手机的一部分交给 AI 模型。请把下面的内容读完，滚到最底下，按钮才能点。</string>
+    <string name="mobileuse_risk_what_title">她能做什么</string>
+    <string name="mobileuse_risk_what_body">你在聊天里提出要求时，她可以打开你允许的应用，一步一步地替你点击、输入、滑动、返回和回到桌面。每次任务开始前都要你确认。她只能在你允许的应用里操作，这个列表一开始是空的。</string>
+    <string name="mobileuse_risk_sees_title">她会看到你的屏幕</string>
+    <string name="mobileuse_risk_sees_body">任务进行中，你屏幕上的文字和按钮（如果你的模型支持图片，必要时还有截图）会用你自己的 API key 发给你配置的模型服务商。这可能包括聊天内容、人名，以及这些应用里屏幕上的任何东西。星伴没有自己的服务器，这些内容只发给你的服务商，受他们的隐私条款约束。</string>
+    <string name="mobileuse_risk_mistakes_title">模型可能出错</string>
+    <string name="mobileuse_risk_mistakes_body">AI 模型会看错屏幕、点错地方，或者理解错你的意思。网页或消息里的文字也可能试图骗她。在点“发送”“发布”“删除”“确认”这类按钮之前，她必须先问你，但她仍然可能在你允许的应用里弄乱东西。只允许那些出了错也容易补救的应用。\n\n带支付功能的普通应用（聊天、购物、外卖、打车等）要特别小心：付款页面是靠屏幕上的文字认出来的，个别应用的收银台可能认不出。建议不要允许这类应用，或者先关掉它们的免密支付。</string>
+    <string name="mobileuse_risk_never_title">她一定不会做的事</string>
+    <string name="mobileuse_risk_never_body">这些规则写死在应用里，不靠模型自觉：\n• 不打开银行、支付、钱包、证券、基金、理财、加密货币类应用，即使你把它们加进来也不行。\n• 认出付款页、转账页或密码键盘时，立刻停下。这一条靠屏幕上的文字来认，个别应用可能认不出，见上面的提醒。\n• 不往密码框、验证码、卡号、证件号这类输入框里输入。\n• 不打开系统设置、应用商店、安装器、权限页面、短信、验证器、密码管理器，也不操作星伴自己。\n• 她不能自己发起任务，只有你能在聊天里发起。</string>
+    <string name="mobileuse_risk_stop_title">怎样随时叫停</string>
+    <string name="mobileuse_risk_stop_body">任务进行中，屏幕上会一直有一个“星伴正在操作”的悬浮条，点上面的“停止”，任务立即结束。熄灭屏幕或关闭无障碍服务也会结束任务。一次任务最多 25 步、5 分钟，到了会自动结束。</string>
+    <string name="mobileuse_risk_log_title">你可以查看她做了什么</string>
+    <string name="mobileuse_risk_log_body">每一步都会记在这台手机的操作日志里：时间、应用、动作，以及安全守卫的结论。日志只存在这台手机上，不会被导出。</string>
+    <string name="mobileuse_risk_accept">我已了解，开启</string>
+    <string name="mobileuse_risk_revoke">撤回同意并关闭</string>
+    <string name="mobileuse_risk_scroll_hint">滚到最底下才能继续</string>
+</resources>

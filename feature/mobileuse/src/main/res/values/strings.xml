@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mobileuse_settings_title">Phone actions (Beta)</string>
+
+    <!-- Accessibility service -->
+    <string name="mobileuse_service_label">Starmate phone actions</string>
+    <string name="mobileuse_service_description">Lets Starmate operate apps on your phone when you ask her to in chat. While a task runs, it reads the screen of the apps you have allowed, sends that content to the AI model provider you configured, and taps, types and scrolls for you. It never operates banking, payment, wallet, brokerage or crypto apps, system settings, app stores, SMS, authenticator or password apps, and stops when a payment screen or password keyboard appears. When no task is running it does nothing. A bar with a Stop button stays on screen during every task.</string>
+
+    <!-- Overlay -->
+    <string name="mobileuse_overlay_running">Starmate is operating your phone</string>
+    <string name="mobileuse_overlay_stop">Stop</string>
+    <string name="mobileuse_overlay_confirm_title">Starmate needs your OK</string>
+    <string name="mobileuse_overlay_yes">Yes</string>
+    <string name="mobileuse_overlay_no">No</string>
+
+    <!-- Lab screen -->
+    <string name="mobileuse_lab_intro">Experimental. When you ask in chat, she can open the apps you allow and tap, type and scroll for you. Every task needs your confirmation first, and you can stop it at any time.</string>
+    <string name="mobileuse_lab_enable">Allow phone actions</string>
+    <string name="mobileuse_lab_enable_summary">She can offer to do things on your phone when you ask</string>
+    <string name="mobileuse_lab_enable_needs_risk">Read the risk notice first</string>
+    <string name="mobileuse_lab_needs_android11">Needs Android 11 or later</string>
+    <string name="mobileuse_lab_stop_running">Stop the current task</string>
+    <string name="mobileuse_lab_section_setup">Setup</string>
+    <string name="mobileuse_lab_service">Accessibility service</string>
+    <string name="mobileuse_lab_service_on">Connected</string>
+    <string name="mobileuse_lab_service_off">Off. Tap to open accessibility settings and turn on “Starmate phone actions”</string>
+    <string name="mobileuse_lab_restricted_title">Can\'t turn the service on?</string>
+    <string name="mobileuse_lab_restricted_summary">On Android 13 and later, apps installed outside an app store start with “restricted settings”. Open App info, tap the ⋮ menu, choose “Allow restricted settings”, then try again.</string>
+    <string name="mobileuse_lab_allowlist_empty">No apps allowed yet. She can\'t operate anything until you add some</string>
+    <string name="mobileuse_lab_allowlist_count">%1$d apps allowed</string>
+    <string name="mobileuse_lab_section_limits">Limits for one task</string>
+    <string name="mobileuse_lab_limit_steps">Up to %1$d steps</string>
+    <string name="mobileuse_lab_limit_minutes">Up to %1$d minutes</string>
+    <string name="mobileuse_lab_limit_tokens">Up to %1$dk tokens</string>
+    <string name="mobileuse_lab_limits_note">A task ends as soon as it reaches any of these limits. Steps and minutes can only be lowered.</string>
+    <string name="mobileuse_lab_section_more">More</string>
+    <string name="mobileuse_lab_log_summary">Every step of every task, with the safety guard\'s decision</string>
+    <string name="mobileuse_lab_risk_accepted">Read and accepted</string>
+    <string name="mobileuse_lab_risk_unread">Not read yet</string>
+    <string name="mobileuse_lab_how_to_stop">How to stop a task</string>
+    <string name="mobileuse_lab_how_to_stop_summary">Tap Stop on the bar at the top of the screen, turn the screen off, or turn the accessibility service off.</string>
+
+    <!-- Allowlist -->
+    <string name="mobileuse_allowlist_title">Allowed apps</string>
+    <string name="mobileuse_allowlist_intro">She can only operate the apps you tick here. Greyed-out apps are always off limits and can\'t be added.\n\nThink twice before ticking apps that can also take payments (chat, shopping, food delivery, ride hailing). She stops when she recognises a payment screen and asks you before tapping buttons such as Pay or Buy, but she cannot be sure to recognise every checkout screen. It is safer to leave these apps unticked, or to turn off their password-free payment first.</string>
+    <string name="mobileuse_allowlist_empty">No apps found</string>
+    <string name="mobileuse_block_self">Starmate itself</string>
+    <string name="mobileuse_block_system">System settings, installer, app store or permission app: always off limits</string>
+    <string name="mobileuse_block_launcher">Home screen app</string>
+    <string name="mobileuse_block_sms">SMS app: always off limits</string>
+    <string name="mobileuse_block_unknown">Can\'t tell what this app is, so it stays off limits</string>
+    <string name="mobileuse_block_payment">Payment or wallet app: always off limits</string>
+    <string name="mobileuse_block_bank">Banking app: always off limits</string>
+    <string name="mobileuse_block_broker">Brokerage, fund or investment app: always off limits</string>
+    <string name="mobileuse_block_crypto">Crypto app: always off limits</string>
+    <string name="mobileuse_block_authenticator">Authenticator app: always off limits</string>
+    <string name="mobileuse_block_password">Password manager: always off limits</string>
+
+    <!-- Action log -->
+    <string name="mobileuse_log_title">Action log</string>
+    <string name="mobileuse_log_clear">Clear log</string>
+    <string name="mobileuse_log_clear_title">Clear the action log?</string>
+    <string name="mobileuse_log_clear_text">All recorded tasks and steps will be deleted from this phone. This can\'t be undone.</string>
+    <string name="mobileuse_log_empty">No tasks yet</string>
+    <string name="mobileuse_log_empty_desc">When she does something on your phone, each step shows up here.</string>
+    <string name="mobileuse_log_no_steps">No steps recorded</string>
+    <string name="mobileuse_log_outcome_running">Running or interrupted</string>
+    <string name="mobileuse_log_outcome_done">Finished</string>
+    <string name="mobileuse_log_outcome_halt">Stopped by safety guard (%1$s)</string>
+    <string name="mobileuse_log_outcome_limit">Hit a limit</string>
+    <string name="mobileuse_log_outcome_stopped">Stopped</string>
+    <string name="mobileuse_log_outcome_failed">Failed</string>
+    <string name="mobileuse_verdict_allow">allowed</string>
+    <string name="mobileuse_verdict_failed">allowed, but failed</string>
+    <string name="mobileuse_verdict_confirm">asked you</string>
+    <string name="mobileuse_verdict_halt">blocked</string>
+    <string name="mobileuse_verdict_user_approved">you said yes</string>
+    <string name="mobileuse_verdict_user_declined">you said no</string>
+    <string name="mobileuse_verdict_user_yes">you answered yes</string>
+    <string name="mobileuse_verdict_user_no">you answered no</string>
+    <string name="mobileuse_verdict_done">finished</string>
+
+    <!-- Risk notice -->
+    <string name="mobileuse_risk_title">Before you turn this on</string>
+    <string name="mobileuse_risk_lead">Phone actions hand parts of your phone to an AI model. Please read all of this. The button at the bottom only works once you have scrolled to the end.</string>
+    <string name="mobileuse_risk_what_title">What she can do</string>
+    <string name="mobileuse_risk_what_body">When you ask in chat, she can open the apps you have allowed and tap, type, scroll, go back and go home for you, one step at a time. You confirm every task before it starts. She only works inside the apps on your allowed list, which is empty until you fill it.</string>
+    <string name="mobileuse_risk_sees_title">She will see your screen</string>
+    <string name="mobileuse_risk_sees_body">During a task, the text and buttons on your screen (and, if your model supports images, screenshots when needed) are sent to the AI model provider you configured, using your own API key. That can include messages, names and anything else that is on screen in those apps. Starmate has no server of its own; the content goes only to your provider, under their privacy terms.</string>
+    <string name="mobileuse_risk_mistakes_title">The model can make mistakes</string>
+    <string name="mobileuse_risk_mistakes_body">AI models misread screens, tap the wrong thing, or misunderstand what you meant. Text on a web page or in a message can also try to trick her. Before she taps things like Send, Post, Delete or Confirm, she has to ask you, but she can still make a mess in the apps you allow. Only allow apps where a mistake would be easy to fix.\n\nBe especially careful with ordinary apps that can also take payments (chat, shopping, food delivery, ride hailing). Payment screens are recognised by the text on screen, and some checkout screens may not be recognised. It is safer not to allow these apps, or to turn off their one-tap and password-free payment first.</string>
+    <string name="mobileuse_risk_never_title">What she will never do</string>
+    <string name="mobileuse_risk_never_body">These rules are built into the app, not left to the model:\n• She never opens banking, payment, wallet, brokerage, fund or crypto apps, even if you add them.\n• She stops the moment she recognises a payment screen, transfer screen or password keyboard. This relies on the text on screen and can miss some apps; see the warning above.\n• She never types into password fields, verification code, card number or ID fields.\n• She never opens system settings, app stores, installers, permission screens, SMS apps, authenticators or password managers, or Starmate itself.\n• She cannot start a task by herself. Only you can, from chat.</string>
+    <string name="mobileuse_risk_stop_title">How to stop her at any time</string>
+    <string name="mobileuse_risk_stop_body">While a task runs, a bar saying “Starmate is operating your phone” stays on screen. Tap Stop on it and the task ends immediately. Turning the screen off or turning the accessibility service off also ends it. A task also ends by itself after 25 steps or 5 minutes.</string>
+    <string name="mobileuse_risk_log_title">You can check what she did</string>
+    <string name="mobileuse_risk_log_body">Every step is written to the action log on this phone: the time, the app, the action and what the safety guard decided. The log stays on this phone and is not included in exports.</string>
+    <string name="mobileuse_risk_accept">I understand, turn it on</string>
+    <string name="mobileuse_risk_revoke">Withdraw consent and turn it off</string>
+    <string name="mobileuse_risk_scroll_hint">Scroll to the end to continue</string>
+</resources>

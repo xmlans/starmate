@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Starmate</string>
+    <string name="app_no_features_title">Nothing here yet</string>
+    <string name="app_no_features_description">No feature modules are installed in this build.</string>
+</resources>

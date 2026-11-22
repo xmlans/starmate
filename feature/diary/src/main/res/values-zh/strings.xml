@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diary_tab">日记</string>
+    <string name="diary_title">日记</string>
+    <string name="diary_empty_title">还没有日记</string>
+    <string name="diary_empty_desc">她偶尔会写日记，通常是在你们聊了很多的那天晚上。</string>
+    <string name="diary_unread">未读</string>
+    <string name="diary_reply">回复这篇</string>
+    <string name="diary_quote_preview">引用她的日记《%1$s》：%2$s</string>
+    <string name="diary_delete">删除</string>
+    <string name="diary_delete_confirm_title">删除这篇日记？</string>
+    <string name="diary_delete_confirm_text">这篇日记会被删除，她从中记住的事仍在记忆页里。此操作无法撤销。</string>
+    <string name="diary_settings_title">日记</string>
+    <string name="diary_frequency">写日记的频率</string>
+    <string name="diary_frequency_off">关闭</string>
+    <string name="diary_frequency_sometimes">偶尔</string>
+    <string name="diary_frequency_often">经常</string>
+    <string name="diary_model">模型</string>
+    <string name="diary_model_chat">用聊天模型写</string>
+    <string name="diary_model_chat_on">保持她平时的口吻</string>
+    <string name="diary_model_chat_off">改用后台模型，可能更省钱</string>
+    <string name="diary_write_now">立即写一篇</string>
+    <string name="diary_write_now_summary">跳过抽签，但当天要有对话</string>
+    <string name="diary_result_written">她写好了今天的日记。</string>
+    <string name="diary_result_no_chat">今天还没聊过，没有可写的。</string>
+    <string name="diary_result_already">今天的日记已经写过了。</string>
+    <string name="diary_result_declined">她说今天不想写。</string>
+    <string name="diary_result_budget">今天的日记额度用完了。</string>
+    <string name="diary_result_failed">这次没成功，请检查模型配置或诊断日志。</string>
+</resources>

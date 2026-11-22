@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 手机操作需要 Android 11+（截图等能力），更低版本不启用无障碍服务组件。 -->
+    <bool name="mobileuse_service_enabled">false</bool>
+</resources>

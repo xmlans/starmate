@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="proactive_settings_title">Proactive messages</string>
+    <string name="proactive_master_title">Let her reach out</string>
+    <string name="proactive_master_summary">She may message you first now and then, and follow up on things you mentioned.</string>
+
+    <string name="proactive_section_frequency">How often</string>
+    <string name="proactive_clinginess_off">Off</string>
+    <string name="proactive_clinginess_low">Low</string>
+    <string name="proactive_clinginess_medium">Medium</string>
+    <string name="proactive_clinginess_high">High</string>
+    <string name="proactive_clinginess_summary">At most %1$d a day</string>
+    <string name="proactive_clinginess_off_summary">She won\'t reach out on her own</string>
+
+    <string name="proactive_section_quiet">Quiet hours</string>
+    <string name="proactive_quiet_start">Starts</string>
+    <string name="proactive_quiet_end">Ends</string>
+    <string name="proactive_quiet_hint">She won\'t message you during this time.</string>
+    <string name="proactive_ok">OK</string>
+    <string name="proactive_cancel">Cancel</string>
+
+    <string name="proactive_section_cares">Scheduled check-ins</string>
+    <string name="proactive_cares_empty">Nothing scheduled yet. When you mention something coming up, she may arrange to ask about it later.</string>
+    <string name="proactive_care_when">Around %1$s</string>
+    <string name="proactive_care_paused">Paused</string>
+    <string name="proactive_cares_paused_hint">Paused while proactive messages are off. Turn them back on and she\'ll pick these up again; ones more than 3 days overdue will be dropped.</string>
+    <string name="proactive_care_cancel_cd">Cancel the check-in about %1$s</string>
+    <string name="proactive_care_cancel_title">Cancel this check-in?</string>
+    <string name="proactive_care_cancel_text">She won\'t come back to ask about “%1$s”.</string>
+    <string name="proactive_care_cancel_confirm">Cancel it</string>
+    <string name="proactive_care_keep">Keep</string>
+
+    <string name="proactive_section_log">Recent activity</string>
+    <string name="proactive_log_empty">Nothing yet.</string>
+    <string name="proactive_log_source_checkin">Casual check-in</string>
+    <string name="proactive_log_source_care">Check-in: %1$s</string>
+    <string name="proactive_log_detail_separator">": "</string>
+    <string name="proactive_outcome_sent">Sent</string>
+    <string name="proactive_outcome_blocked">Held back</string>
+    <string name="proactive_outcome_declined">She chose not to send</string>
+    <string name="proactive_outcome_failed">Failed</string>
+    <string name="proactive_outcome_gave_up">Gave up</string>
+
+    <string name="proactive_reason_disabled">proactive messages are off</string>
+    <string name="proactive_reason_no_network">no network</string>
+    <string name="proactive_reason_quiet_hours">quiet hours</string>
+    <string name="proactive_reason_daily_cap">today\'s limit reached</string>
+    <string name="proactive_reason_too_soon">less than 6 hours since her last message</string>
+    <string name="proactive_reason_unanswered">2 of her messages are still unanswered</string>
+    <string name="proactive_reason_chatting">you were chatting</string>
+    <string name="proactive_reason_budget">today\'s background budget is used up</string>
+    <string name="proactive_reason_not_idle">you chatted recently</string>
+    <string name="proactive_reason_no_history">you haven\'t chatted yet</string>
+    <string name="proactive_reason_chat_started">you started chatting while she was writing</string>
+    <string name="proactive_reason_model_declined">it didn\'t feel like the right moment</string>
+    <string name="proactive_reason_unparseable">her reply could not be understood</string>
+    <string name="proactive_reason_deliver_error">could not save the message</string>
+    <string name="proactive_reason_expired">still not sent 3 days after the planned time</string>
+    <string name="proactive_reason_llm_not_configured">no model is configured</string>
+    <string name="proactive_reason_llm_invalid_key">the API key is invalid</string>
+    <string name="proactive_reason_llm_quota">out of credit or rate limited</string>
+    <string name="proactive_reason_llm_model_not_found">the model was not found</string>
+    <string name="proactive_reason_llm_unreachable">the model service could not be reached</string>
+    <string name="proactive_reason_llm_timeout">the request timed out</string>
+    <string name="proactive_reason_llm_other">the model request failed</string>
+
+    <string name="proactive_section_background">Running in the background</string>
+    <string name="proactive_keepalive_title">Keep alive</string>
+    <string name="proactive_keepalive_summary">Shows a quiet persistent notification so the system is less likely to stop her. Only needed on phones that close background apps aggressively.</string>
+    <string name="proactive_battery_entry">Battery &amp; autostart guide</string>
+    <string name="proactive_battery_entry_summary">Help scheduled check-ins arrive on time</string>
+
+    <string name="proactive_notif_banner_title">Notifications are off</string>
+    <string name="proactive_notif_banner_text">Her messages still appear in the chat, but you won\'t be told when they arrive. Turn on notifications so you don\'t miss them.</string>
+    <string name="proactive_notif_banner_button">Turn on notifications</string>
+
+    <string name="proactive_channel_messages">Messages from her</string>
+    <string name="proactive_channel_messages_description">When she reaches out to you on her own</string>
+    <string name="proactive_channel_keepalive">Background running</string>
+    <string name="proactive_channel_keepalive_description">The quiet notification shown while Starmate keeps running in the background</string>
+    <string name="proactive_keepalive_notification_title">Starmate is running in the background</string>
+    <string name="proactive_keepalive_notification_text">So her check-ins can arrive on time</string>
+    <string name="proactive_work_notification_title">Getting a message ready</string>
+    <string name="proactive_notification_me">Me</string>
+
+    <string name="proactive_invite_title">Notifications</string>
+    <string name="proactive_invite_description">So you know when she reaches out to you</string>
+
+    <string name="proactive_battery_title">Battery &amp; autostart</string>
+    <string name="proactive_battery_intro">Some phones stop background apps to save battery, which can delay or block her messages. Allow the settings below for your phone.</string>
+    <string name="proactive_battery_opt_section">Battery optimization</string>
+    <string name="proactive_battery_opt_title">Ignore battery optimization</string>
+    <string name="proactive_battery_opt_granted">Allowed</string>
+    <string name="proactive_battery_opt_needed">Tap to allow, so the system doesn\'t hold back her check-ins</string>
+    <string name="proactive_battery_your_phone">%1$s (your phone)</string>
+    <string name="proactive_battery_open">Open settings</string>
+    <string name="proactive_battery_other_section">Other</string>
+    <string name="proactive_battery_app_details">App details</string>
+    <string name="proactive_battery_app_details_summary">Battery, background and notification settings for Starmate</string>
+    <string name="proactive_battery_keepalive_hint_title">Still missing messages?</string>
+    <string name="proactive_battery_keepalive_hint">Turn on Keep alive on the previous page, and lock Starmate in the recent apps list if your phone supports it.</string>
+    <string name="proactive_battery_lock_hint">Lock Starmate in the recent apps list if your phone supports it, and check the phone-specific steps above.</string>
+
+    <string name="proactive_vendor_xiaomi">Xiaomi / Redmi / POCO</string>
+    <string name="proactive_vendor_xiaomi_steps">1. Settings → Apps → Manage apps → Starmate → turn on Autostart.\n2. In the same page open Battery saver and choose No restrictions.\n3. In recent apps, pull Starmate down to lock it.</string>
+    <string name="proactive_vendor_huawei">Huawei / Honor</string>
+    <string name="proactive_vendor_huawei_steps">1. Settings → Battery → App launch → find Starmate and turn off Manage automatically.\n2. In the dialog, allow Auto-launch, Secondary launch and Run in background.\n3. In recent apps, pull Starmate down to lock it.</string>
+    <string name="proactive_vendor_oppo">OPPO / realme / OnePlus</string>
+    <string name="proactive_vendor_oppo_steps">1. Settings → Apps → Auto launch (or App management → Starmate) → allow Auto launch.\n2. Starmate → Battery usage → allow background activity.\n3. In recent apps, tap the menu on Starmate and choose Lock.</string>
+    <string name="proactive_vendor_vivo">vivo / iQOO</string>
+    <string name="proactive_vendor_vivo_steps">1. i Manager → App manager → Autostart manager → allow Starmate.\n2. Settings → Battery → Background power consumption → allow Starmate.\n3. In recent apps, pull Starmate down to lock it.</string>
+    <string name="proactive_vendor_samsung">Samsung</string>
+    <string name="proactive_vendor_samsung_steps">1. Settings → Battery → Background usage limits → make sure Starmate is not under Sleeping or Deep sleeping apps.\n2. Add Starmate to Never sleeping apps.\n3. Settings → Apps → Starmate → Battery → choose Unrestricted.</string>
+</resources>

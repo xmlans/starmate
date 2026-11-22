@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">星伴</string>
+    <string name="app_no_features_title">这里还什么都没有</string>
+    <string name="app_no_features_description">功能模块尚未安装。</string>
+</resources>

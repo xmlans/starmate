@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diary_tab">Diary</string>
+    <string name="diary_title">Diary</string>
+    <string name="diary_empty_title">No diary entries yet</string>
+    <string name="diary_empty_desc">She writes a diary now and then, on evenings after you have talked a lot.</string>
+    <string name="diary_unread">Unread</string>
+    <string name="diary_reply">Reply to this entry</string>
+    <string name="diary_quote_preview">Quoting her diary \"%1$s\": %2$s</string>
+    <string name="diary_delete">Delete</string>
+    <string name="diary_delete_confirm_title">Delete this entry?</string>
+    <string name="diary_delete_confirm_text">This diary entry will be removed. What she remembers from it is kept on the Memory page. This cannot be undone.</string>
+    <string name="diary_settings_title">Diary</string>
+    <string name="diary_frequency">How often she writes</string>
+    <string name="diary_frequency_off">Never</string>
+    <string name="diary_frequency_sometimes">Sometimes</string>
+    <string name="diary_frequency_often">Often</string>
+    <string name="diary_model">Model</string>
+    <string name="diary_model_chat">Use the chat model</string>
+    <string name="diary_model_chat_on">Keeps her usual voice</string>
+    <string name="diary_model_chat_off">Uses the background model, which may be cheaper</string>
+    <string name="diary_write_now">Write one now</string>
+    <string name="diary_write_now_summary">Skips the random draw; needs a conversation today</string>
+    <string name="diary_result_written">She wrote today\'s diary.</string>
+    <string name="diary_result_no_chat">You have not talked today, so there is nothing to write about.</string>
+    <string name="diary_result_already">She already wrote today\'s diary.</string>
+    <string name="diary_result_declined">She did not feel like writing today.</string>
+    <string name="diary_result_budget">Today\'s diary budget is used up.</string>
+    <string name="diary_result_failed">It did not work this time. Check the model settings or the diagnostic log.</string>
+</resources>

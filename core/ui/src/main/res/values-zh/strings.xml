@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_back">返回</string>
+    <string name="core_cancel">取消</string>
+    <string name="core_confirm">确定</string>
+
+    <string name="core_accent_pink">浅粉</string>
+    <string name="core_accent_blue">晴空蓝</string>
+    <string name="core_accent_purple">薰衣草紫</string>
+    <string name="core_accent_green">薄荷绿</string>
+    <string name="core_accent_orange">杏子橙</string>
+</resources>

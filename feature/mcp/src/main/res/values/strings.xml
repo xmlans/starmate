@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mcp_settings_title">Online services</string>
+    <string name="mcp_settings_intro">Connect web search and maps with your own key. Each service is off by default. Its tools are only offered in chat, and what they return is treated as data. The key is stored encrypted on this phone and is only sent to that service.</string>
+    <string name="mcp_tavily_title">Tavily web search</string>
+    <string name="mcp_tavily_desc">Lets her search the web and read pages. Get a key at tavily.com.</string>
+    <string name="mcp_amap_title">AMap</string>
+    <string name="mcp_amap_desc">Lets her look up places, routes and weather in mainland China. Get a key at lbs.amap.com.</string>
+    <string name="mcp_enable">Turn on</string>
+    <string name="mcp_key_label">API key</string>
+    <string name="mcp_key_saved">Saved (hidden)</string>
+    <string name="mcp_key_save">Save</string>
+    <string name="mcp_key_clear">Remove key</string>
+    <string name="mcp_test">Test</string>
+    <string name="mcp_status_not_configured">No key yet</string>
+    <string name="mcp_status_unchecked">Not checked yet</string>
+    <string name="mcp_status_ok">Working, %1$d tools</string>
+    <string name="mcp_status_failed">Connection failed: %1$s</string>
+    <string name="mcp_reason_unauthorized">the key is invalid or expired</string>
+    <string name="mcp_reason_http">the service returned HTTP %1$d</string>
+    <string name="mcp_reason_unreachable">could not reach the service</string>
+    <string name="mcp_reason_timeout">no response within 30 seconds</string>
+    <string name="mcp_reason_protocol">unexpected response</string>
+    <string name="mcp_tools_found">Tools: %1$s</string>
+    <string name="mcp_describe_call">%1$s: %2$s</string>
+    <string name="mcp_confirm_call">Use %1$s (%2$s) with: %3$s</string>
+</resources>

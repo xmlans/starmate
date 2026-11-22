@@ -1,0 +1,146 @@
+# 星伴手机操作的内置黑名单（守卫 G2 / G6 / G7）。用户不能修改。
+# 格式：每行一个包名，# 之后是注释；[段名] 开始一个类别。
+# 匹配规则：包名完全相同，或以“表里的包名 + .”开头。表外的应用还会按应用名关键词兜底。
+# 每一条都核实过真实存在（2026-11-12）：Google Play 商品页、腾讯应用宝 / 小米应用商店详情页、
+# AOSP 源码里的 AndroidManifest.xml、source.android.com 与 CTS 源码、BAYTON 系统应用数据库、华为开发者文档。
+# 拿不准的包名不写，交给应用名关键词兜底。
+
+[payment]
+com.eg.android.AlipayGphone              # 支付宝
+hk.alipay.wallet                         # AlipayHK
+com.unionpay                             # 云闪付
+com.paypal.android.p2pmobile             # PayPal
+com.google.android.apps.walletnfcrel     # Google Wallet
+com.google.android.apps.nbu.paisa.user   # Google Pay（印度）
+com.samsung.android.spay                 # Samsung Wallet
+com.venmo                                # Venmo
+com.squareup.cash                        # Cash App
+net.one97.paytm                          # Paytm
+com.phonepe.app                          # PhonePe
+com.hdfcbank.payzapp                     # PayZapp
+com.transferwise.android                 # Wise
+com.revolut.revolut                      # Revolut
+com.myklarnamobile                       # Klarna
+com.octopuscards.nfc_reader              # 八达通
+com.jd.jrapp                             # 京东金融
+com.mipay.wallet                         # 小米钱包
+
+[bank]
+com.icbc                                 # 中国工商银行
+cmb.pb                                   # 招商银行
+com.cmbchina.ccd.pluto.cmbActivity       # 招商银行信用卡 掌上生活
+com.chinamworld.main                     # 中国建设银行
+com.android.bankabc                      # 中国农业银行
+com.chinamworld.bocmbci                  # 中国银行
+com.bankcomm.Bankcomm                    # 交通银行
+com.yitong.mbank.psbc                    # 邮储银行
+com.ecitic.bank.mobile                   # 中信银行
+com.cebbank.mobile.cemb                  # 光大银行
+cn.com.cmbc.newmbank                     # 民生银行
+com.cib.cibmb                            # 兴业银行
+com.pingan.paces.ccms                    # 平安口袋银行
+cn.com.spdb.mobilebank.per               # 浦发银行
+com.webank.wemoney                       # 微众银行
+com.mybank.android.phone                 # 网商银行
+com.chase.sig.android                    # Chase
+com.infonow.bofa                         # Bank of America
+com.wf.wellsfargomobile                  # Wells Fargo
+com.citi.citimobile                      # Citi
+com.konylabs.capitalone                  # Capital One
+com.usaa.mobile.android.usaa             # USAA
+com.americanexpress.android.acctsvcs.us  # American Express
+com.htsu.hsbcpersonalbanking             # HSBC
+uk.co.hsbc.hsbcukmobilebanking           # HSBC UK
+com.barclays.android.barclaysmobilebanking  # Barclays UK
+com.grppl.android.shell.CMBlloydsTSB73   # Lloyds
+co.uk.getmondo                           # Monzo
+de.number26.android                      # N26
+com.starlingbank.android                 # Starling
+com.sbi.lotusintouch                     # YONO SBI
+com.csam.icici.bank.imobile              # ICICI iMobile
+com.nu.production                        # Nubank
+
+[broker]
+com.robinhood.android                    # Robinhood
+org.dayup.stocks                         # Webull
+com.etrade.mobilepro.activity            # E*TRADE
+com.schwab.mobile                        # Schwab
+com.fidelity.android                     # Fidelity
+atws.app                                 # IBKR Mobile
+cn.futu.trader                           # 富途牛牛
+com.moomoo.trade                         # moomoo
+com.tigerbrokers.stock                   # 老虎证券
+com.hexin.plat.android                   # 同花顺
+com.eastmoney.android.berlin             # 东方财富
+com.antfortune.wealth                    # 蚂蚁财富
+com.etoro.openbook                       # eToro
+com.avuscapital.trading212               # Trading 212
+
+[crypto]
+com.binance.dev                          # Binance
+io.metamask                              # MetaMask
+com.wallet.crypto.trustapp               # Trust Wallet
+com.coinbase.android                     # Coinbase
+org.toshi                                # Coinbase Wallet
+com.okinc.okex.gp                        # OKX
+com.bybit.app                            # Bybit
+com.kraken.trade                         # Kraken Pro
+piuk.blockchain.android                  # Blockchain.com Wallet
+im.token.app                             # imToken
+vip.mytokenpocket                        # TokenPocket
+app.phantom                              # Phantom
+exodusmovement.exodus                    # Exodus
+com.ledger.live                          # Ledger Wallet
+co.mona.android                          # Crypto.com
+com.kubi.kucoin                          # KuCoin
+com.mycelium.wallet                      # Mycelium
+com.greenaddress.greenbits_android_wallet  # Blockstream Green
+io.atomicwallet                          # Atomic Wallet
+
+[authenticator]
+com.google.android.apps.authenticator2   # Google Authenticator
+com.azure.authenticator                  # Microsoft Authenticator
+com.authy.authy                          # Twilio Authy
+com.beemdevelopment.aegis                # Aegis
+com.duosecurity.duomobile                # Duo Mobile
+org.fedorahosted.freeotp                 # FreeOTP
+com.lastpass.authenticator               # LastPass Authenticator
+com.okta.android.auth                    # Okta Verify
+com.yubico.yubioath                      # Yubico Authenticator
+com.twofasapp                            # 2FAS
+com.tencent.token                        # QQ 安全中心
+com.netease.mkey                         # 网易将军令
+
+[password_manager]
+com.x8bit.bitwarden                      # Bitwarden
+com.onepassword.android                  # 1Password
+com.lastpass.lpandroid                   # LastPass
+com.dashlane                             # Dashlane
+keepass2android.keepass2android          # Keepass2Android
+com.kunzisoft.keepass.free               # KeePassDX
+com.callpod.android_apps.keeper          # Keeper
+com.siber.roboform                       # RoboForm
+com.nordpass.android.app.password.manager  # NordPass
+proton.android.pass                      # Proton Pass
+io.enpass.app                            # Enpass
+
+[sms]
+com.google.android.apps.messaging        # Google Messages
+com.samsung.android.messaging            # Samsung Messages
+com.android.mms                          # AOSP 短信（多数国产系统沿用）
+com.android.messaging                    # AOSP Messaging
+
+[system]
+com.android.settings                     # 系统设置
+com.android.packageinstaller             # 安装器（AOSP）
+com.google.android.packageinstaller      # 安装器（Google）
+com.android.permissioncontroller         # 权限控制器（AOSP）
+com.google.android.permissioncontroller  # 权限控制器（Google）
+com.google.android.gms                   # Google Play 服务（账号、支付组件）
+com.android.vending                      # Google Play 商店（安装、购买）
+com.huawei.appmarket                     # 华为应用市场
+com.heytap.market                        # OPPO 软件商店
+com.sec.android.app.samsungapps          # Galaxy Store
+com.tencent.android.qqdownloader         # 应用宝
+com.miui.securitycenter                  # 小米安全中心（权限管理）
+com.samsung.android.lool                 # 三星设备维护

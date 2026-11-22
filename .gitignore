@@ -1,0 +1,19 @@
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.kotlin/
+captures/
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# 发布签名：密钥和密码都不进版本库
+keystore.properties
+signing/
+*.p12
+
+# 本机工具缓存
+.ruff_cache/

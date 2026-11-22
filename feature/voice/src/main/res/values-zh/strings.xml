@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_settings_title">语音</string>
+
+    <string name="voice_section_messages">她的语音</string>
+    <string name="voice_section_input">语音输入</string>
+    <string name="voice_section_storage">存储</string>
+
+    <string name="voice_tts_missing_title">还没有配置语音模型</string>
+    <string name="voice_tts_missing_summary">去模型配置页添加语音合成模型，就能收到她的语音</string>
+    <string name="voice_tts_missing_fallback">现在用的是手机自带的语音。去模型配置页添加语音合成模型，声音会更好听</string>
+    <string name="voice_tts_model">语音模型</string>
+
+    <string name="voice_frequency">她发语音的频率</string>
+    <string name="voice_frequency_never">从不</string>
+    <string name="voice_frequency_sometimes">偶尔</string>
+    <string name="voice_frequency_often">经常</string>
+    <string name="voice_frequency_always">每条</string>
+
+    <string name="voice_daily_limit">每日上限</string>
+    <string name="voice_daily_limit_summary">每天 %1$d 条，今天已发 %2$d 条，超出后改用文字</string>
+    <string name="voice_daily_limit_value">每天 %1$d 条</string>
+
+    <string name="voice_system_fallback">用系统语音代替</string>
+    <string name="voice_system_fallback_summary">没有配置语音模型时，用手机自带的语音合成</string>
+
+    <string name="voice_sample">试听</string>
+    <string name="voice_sample_summary">听听现在的设置下她的声音</string>
+    <string name="voice_sample_text">嗨，是我呀，今天过得怎么样？</string>
+    <string name="voice_sample_unavailable">请先配置语音模型，或打开“用系统语音代替”</string>
+    <string name="voice_sample_failed">试听失败，请检查语音模型配置</string>
+
+    <string name="voice_input_engine">语音识别</string>
+    <string name="voice_input_system">手机自带的语音识别</string>
+
+    <string name="voice_cache_size">语音文件</string>
+    <string name="voice_cache_clean">清理 30 天前的语音</string>
+    <string name="voice_cache_clean_summary">清理后这些消息改为显示文字稿</string>
+    <string name="voice_cache_clean_confirm_title">清理旧语音？</string>
+    <string name="voice_cache_clean_confirm_text">30 天前的语音音频会被删除，这些消息会改为显示文字稿。此操作无法撤销。</string>
+    <string name="voice_cache_clean_confirm">清理</string>
+    <string name="voice_cache_nothing">没有需要清理的语音</string>
+    <plurals name="voice_cache_cleaned">
+        <item quantity="other">已清理 %1$d 个语音文件</item>
+    </plurals>
+    <string name="voice_dialog_cancel">取消</string>
+
+    <string name="voice_recording">正在录音…</string>
+    <string name="voice_play">播放语音</string>
+    <string name="voice_play_seconds">播放语音，%1$d 秒</string>
+    <string name="voice_pause">暂停</string>
+    <string name="voice_duration_seconds">%1$d″</string>
+    <string name="voice_show_text">转文字</string>
+    <string name="voice_hide_text">收起</string>
+
+    <string name="voice_mic_start">语音输入</string>
+    <string name="voice_mic_stop">结束并识别</string>
+    <string name="voice_mic_transcribing">正在识别…</string>
+    <string name="voice_mic_permission_denied">需要麦克风权限才能语音输入</string>
+    <string name="voice_mic_no_speech">没听清，再说一次吧</string>
+    <string name="voice_mic_network">识别失败：网络有问题</string>
+    <string name="voice_mic_unavailable">现在用不了语音识别</string>
+    <string name="voice_mic_failed">识别失败</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="proactive_settings_title">主动消息</string>
+    <string name="proactive_master_title">让她主动找你</string>
+    <string name="proactive_master_summary">她会偶尔先来找你，也会回头问问你提过的事。</string>
+
+    <string name="proactive_section_frequency">粘人程度</string>
+    <string name="proactive_clinginess_off">关</string>
+    <string name="proactive_clinginess_low">低</string>
+    <string name="proactive_clinginess_medium">中</string>
+    <string name="proactive_clinginess_high">高</string>
+    <string name="proactive_clinginess_summary">每天最多 %1$d 条</string>
+    <string name="proactive_clinginess_off_summary">她不会主动来找你</string>
+
+    <string name="proactive_section_quiet">免打扰时段</string>
+    <string name="proactive_quiet_start">开始</string>
+    <string name="proactive_quiet_end">结束</string>
+    <string name="proactive_quiet_hint">这段时间里她不会来打扰你。</string>
+    <string name="proactive_ok">确定</string>
+    <string name="proactive_cancel">取消</string>
+
+    <string name="proactive_section_cares">已安排的关心</string>
+    <string name="proactive_cares_empty">暂时没有。你提到接下来要发生的事时，她可能会约好之后来问问。</string>
+    <string name="proactive_care_when">约 %1$s</string>
+    <string name="proactive_care_paused">已暂停</string>
+    <string name="proactive_cares_paused_hint">主动消息关闭期间，这些关心已暂停。重新打开后她会接着安排；超过原定时间 3 天的会被放弃。</string>
+    <string name="proactive_care_cancel_cd">取消关于“%1$s”的关心</string>
+    <string name="proactive_care_cancel_title">取消这次关心？</string>
+    <string name="proactive_care_cancel_text">她就不会再来问“%1$s”了。</string>
+    <string name="proactive_care_cancel_confirm">取消关心</string>
+    <string name="proactive_care_keep">保留</string>
+
+    <string name="proactive_section_log">发送记录</string>
+    <string name="proactive_log_empty">还没有记录。</string>
+    <string name="proactive_log_source_checkin">随机问候</string>
+    <string name="proactive_log_source_care">关心：%1$s</string>
+    <string name="proactive_log_detail_separator">：</string>
+    <string name="proactive_outcome_sent">已发送</string>
+    <string name="proactive_outcome_blocked">没有发</string>
+    <string name="proactive_outcome_declined">她决定不发</string>
+    <string name="proactive_outcome_failed">发送失败</string>
+    <string name="proactive_outcome_gave_up">已放弃</string>
+
+    <string name="proactive_reason_disabled">主动消息已关闭</string>
+    <string name="proactive_reason_no_network">没有网络</string>
+    <string name="proactive_reason_quiet_hours">在免打扰时段内</string>
+    <string name="proactive_reason_daily_cap">今天的次数已用完</string>
+    <string name="proactive_reason_too_soon">距她上一条主动消息不到 6 小时</string>
+    <string name="proactive_reason_unanswered">她已有 2 条消息你还没回</string>
+    <string name="proactive_reason_chatting">你们正在聊天</string>
+    <string name="proactive_reason_budget">今天的后台预算已用完</string>
+    <string name="proactive_reason_not_idle">你们刚聊过不久</string>
+    <string name="proactive_reason_no_history">你们还没有聊过天</string>
+    <string name="proactive_reason_chat_started">她写消息时你开始聊天了</string>
+    <string name="proactive_reason_model_declined">她觉得现在不是合适的时候</string>
+    <string name="proactive_reason_unparseable">模型的回复无法识别</string>
+    <string name="proactive_reason_deliver_error">消息没能存进聊天记录</string>
+    <string name="proactive_reason_expired">超过原定时间 3 天仍未发出</string>
+    <string name="proactive_reason_llm_not_configured">还没有配置模型</string>
+    <string name="proactive_reason_llm_invalid_key">API key 无效</string>
+    <string name="proactive_reason_llm_quota">余额不足或被限流</string>
+    <string name="proactive_reason_llm_model_not_found">找不到这个模型</string>
+    <string name="proactive_reason_llm_unreachable">连不上模型服务</string>
+    <string name="proactive_reason_llm_timeout">请求超时</string>
+    <string name="proactive_reason_llm_other">调用模型失败</string>
+
+    <string name="proactive_section_background">后台运行</string>
+    <string name="proactive_keepalive_title">保活</string>
+    <string name="proactive_keepalive_summary">显示一条安静的常驻通知，让系统不容易停掉她。只有杀后台很严重的手机才需要。</string>
+    <string name="proactive_battery_entry">电池与自启动设置</string>
+    <string name="proactive_battery_entry_summary">让约好的关心按时到达</string>
+
+    <string name="proactive_notif_banner_title">通知没有打开</string>
+    <string name="proactive_notif_banner_text">她的消息仍会出现在聊天里，但你不会收到提醒。打开通知才不会错过。</string>
+    <string name="proactive_notif_banner_button">打开通知</string>
+
+    <string name="proactive_channel_messages">她发来的消息</string>
+    <string name="proactive_channel_messages_description">她主动来找你时</string>
+    <string name="proactive_channel_keepalive">后台运行</string>
+    <string name="proactive_channel_keepalive_description">星伴保持后台运行时显示的安静通知</string>
+    <string name="proactive_keepalive_notification_title">星伴正在后台运行</string>
+    <string name="proactive_keepalive_notification_text">为了让她的关心按时到达</string>
+    <string name="proactive_work_notification_title">正在准备消息</string>
+    <string name="proactive_notification_me">我</string>
+
+    <string name="proactive_invite_title">通知</string>
+    <string name="proactive_invite_description">她主动来找你时，你能收到提醒</string>
+
+    <string name="proactive_battery_title">电池与自启动</string>
+    <string name="proactive_battery_intro">有些手机为了省电会停掉后台应用，她的消息可能因此推迟或收不到。按你的手机品牌打开下面的设置。</string>
+    <string name="proactive_battery_opt_section">电池优化</string>
+    <string name="proactive_battery_opt_title">忽略电池优化</string>
+    <string name="proactive_battery_opt_granted">已允许</string>
+    <string name="proactive_battery_opt_needed">点按允许，系统就不会压着她的关心不发</string>
+    <string name="proactive_battery_your_phone">%1$s（你的手机）</string>
+    <string name="proactive_battery_open">去设置</string>
+    <string name="proactive_battery_other_section">其他</string>
+    <string name="proactive_battery_app_details">应用详情</string>
+    <string name="proactive_battery_app_details_summary">星伴的电池、后台和通知设置</string>
+    <string name="proactive_battery_keepalive_hint_title">还是收不到？</string>
+    <string name="proactive_battery_keepalive_hint">在上一页打开“保活”；如果手机支持，在最近任务里把星伴锁住。</string>
+    <string name="proactive_battery_lock_hint">如果手机支持，在最近任务里把星伴锁住，并按上面对应品牌的步骤再检查一遍。</string>
+
+    <string name="proactive_vendor_xiaomi">小米 / 红米 / POCO</string>
+    <string name="proactive_vendor_xiaomi_steps">1. 设置 → 应用设置 → 应用管理 → 星伴 → 打开“自启动”。\n2. 同一页进入“省电策略”，选“无限制”。\n3. 在最近任务里下拉星伴的卡片，把它锁住。</string>
+    <string name="proactive_vendor_huawei">华为 / 荣耀</string>
+    <string name="proactive_vendor_huawei_steps">1. 设置 → 电池 → 启动管理（应用启动管理）→ 找到星伴，关闭“自动管理”。\n2. 在弹窗里打开“允许自启动”“允许关联启动”“允许后台活动”。\n3. 在最近任务里下拉星伴的卡片，把它锁住。</string>
+    <string name="proactive_vendor_oppo">OPPO / 真我 / 一加</string>
+    <string name="proactive_vendor_oppo_steps">1. 设置 → 应用 → 自启动（或 应用管理 → 星伴）→ 允许自动启动。\n2. 星伴 → 耗电管理 → 允许后台行为。\n3. 在最近任务里点星伴卡片的菜单，选“锁定”。</string>
+    <string name="proactive_vendor_vivo">vivo / iQOO</string>
+    <string name="proactive_vendor_vivo_steps">1. i 管家 → 应用管理 → 自启动管理 → 允许星伴。\n2. 设置 → 电池 → 后台耗电管理 → 允许星伴后台高耗电。\n3. 在最近任务里下拉星伴的卡片，把它锁住。</string>
+    <string name="proactive_vendor_samsung">三星</string>
+    <string name="proactive_vendor_samsung_steps">1. 设置 → 电池 → 后台使用限制 → 确认星伴不在“休眠应用”或“深度休眠应用”里。\n2. 把星伴加入“永不休眠的应用”。\n3. 设置 → 应用程序 → 星伴 → 电池 → 选“不受限制”。</string>
+</resources>

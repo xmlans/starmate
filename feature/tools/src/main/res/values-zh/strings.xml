@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tools_settings_title">本地工具</string>
+    <string name="tools_settings_intro">每组默认关闭。启用后，她只在聊到相关话题时才去查；选“让她随时知道”后，每次聊天都会附上一行相关信息。数据只发给你自己配置的模型服务商。</string>
+
+    <string name="tools_group_calendar">日历</string>
+    <string name="tools_group_alarm">闹钟与计时器</string>
+    <string name="tools_group_contacts">联系人</string>
+    <string name="tools_group_location">位置与天气</string>
+    <string name="tools_group_health">健康</string>
+    <string name="tools_group_music">音乐</string>
+
+    <string name="tools_group_calendar_sees">她查询的时间范围内日程的标题、时间和地点（最长 31 天、最多 20 条）。经你确认后，她可以往你的主日历里添加日程。选“随时知道”时，她能看到今天还没结束的日程，最多 3 条。</string>
+    <string name="tools_group_alarm_sees">你的下一个闹钟时间。经你确认、并且星伴在前台时，她可以在时钟应用里帮你设闹钟和计时器。</string>
+    <string name="tools_group_contacts_sees">只有按名字查到的联系人的姓名、电话和生日，每次最多 5 个。联系人不会被批量发送。经你确认后，她可以打开拨号盘，由你自己按下拨出。</string>
+    <string name="tools_group_location_sees">你的大致坐标、所在城市和当地天气。只在星伴打开时读取位置，在后台只用上次保存的位置。天气数据来自 Open-Meteo。</string>
+    <string name="tools_group_health_sees">Health Connect 里的睡眠时间和每天步数。Health Connect 没有步数时，用手机自带的计步器兜底。</string>
+    <string name="tools_group_music_sees">正在播放的歌名、歌手和应用，以及最近 50 首歌。通知使用权只用来查看媒体播放信息，不会读取任何通知内容。</string>
+
+    <string name="tools_status_off">未启用</string>
+    <string name="tools_status_missing">缺权限</string>
+    <string name="tools_status_on_demand">只在需要时查</string>
+    <string name="tools_status_ambient">随时知道</string>
+
+    <string name="tools_detail_what_she_sees">她能看到什么</string>
+    <string name="tools_detail_enable">启用</string>
+    <string name="tools_detail_mode">她知道多少</string>
+    <string name="tools_mode_on_demand">只在需要时查</string>
+    <string name="tools_mode_on_demand_desc">聊到相关话题时她才去查</string>
+    <string name="tools_mode_ambient">让她随时知道</string>
+    <string name="tools_mode_ambient_desc">每次聊天都附上一行简短信息，比如今天的步数</string>
+    <string name="tools_detail_permission">权限</string>
+    <string name="tools_permission_granted">已授权</string>
+    <string name="tools_permission_missing">还没有授权</string>
+    <string name="tools_location_permission_note">给大致位置就够了。不会申请后台定位。</string>
+    <string name="tools_grant">去授权</string>
+    <string name="tools_open_app_settings">应用设置</string>
+
+    <string name="tools_city_title">手动填写城市</string>
+    <string name="tools_city_desc">不想给定位权限的话，可以填一个城市，天气就按这个城市查。</string>
+    <string name="tools_city_hint">城市</string>
+    <string name="tools_city_save">保存</string>
+    <string name="tools_city_clear">清除</string>
+    <string name="tools_city_saved">已设为 %1$s</string>
+    <string name="tools_city_not_found">找不到这个城市</string>
+    <string name="tools_city_failed">查询失败，请检查网络</string>
+
+    <string name="tools_hc_title">Health Connect</string>
+    <string name="tools_hc_available">Health Connect 可用。</string>
+    <string name="tools_hc_needs_update">Health Connect 需要更新后才能使用。</string>
+    <string name="tools_hc_unavailable">这台手机上没有可用的 Health Connect。可以安装后再回来授权；步数仍然可以来自手机计步器。</string>
+    <string name="tools_hc_install">安装或更新</string>
+    <string name="tools_hc_open">打开 Health Connect</string>
+    <string name="tools_hc_rationale_title">星伴如何使用健康数据</string>
+    <string name="tools_hc_rationale_body">星伴只读取你的睡眠记录和步数，并且只在你启用了“健康”这一组时才读。这些数字会作为聊天请求的一部分，发给你自己配置的 AI 模型服务商，好让她问问你睡得怎么样、注意到你今天走了很多路。星伴不写入任何健康数据，不与任何其他人分享，也没有自己的服务器。你可以随时关闭这一组，或在 Health Connect 里撤销授权。</string>
+
+    <string name="tools_music_listener_label">星伴音乐</string>
+    <string name="tools_music_restricted_hint">Android 13 及以上，如果开关是灰色的，需要先允许受限设置。</string>
+    <string name="tools_restricted_title">允许受限设置</string>
+    <string name="tools_restricted_intro">Android 13 及以上，不是从应用商店安装的应用，要先允许受限设置，才能开通知使用权。星伴开通知使用权只是为了看到正在播放的音乐。</string>
+    <string name="tools_restricted_steps">步骤</string>
+    <string name="tools_restricted_step1">先试着给星伴开一次通知使用权；如果开关是灰色的，继续下面的步骤。</string>
+    <string name="tools_restricted_step2">打开星伴的应用信息页。</string>
+    <string name="tools_restricted_step3">点右上角的 ⋮ 菜单，选“允许受限设置”，然后确认。</string>
+    <string name="tools_restricted_step4">回到通知使用权页面，打开“星伴音乐”。</string>
+    <string name="tools_restricted_open">打开应用信息</string>
+    <string name="tools_restricted_open_listener">通知使用权</string>
+
+    <string name="tools_invite_location_title">位置与天气</string>
+    <string name="tools_invite_location_desc">她会知道你所在的城市和天气。给大致位置就够了。</string>
+    <string name="tools_invite_calendar_title">日历</string>
+    <string name="tools_invite_calendar_desc">她会知道你今天有哪些安排。</string>
+    <string name="tools_invite_health_title">健康</string>
+    <string name="tools_invite_health_desc">她会知道你睡得怎么样、走了多少路。</string>
+    <string name="tools_invite_music_title">音乐</string>
+    <string name="tools_invite_music_desc">她会知道你正在听什么歌。</string>
+
+    <string name="tools_calendar_describe_create">添加日程：%1$s %2$s</string>
+    <string name="tools_calendar_describe_create_no_time">添加日程：%1$s</string>
+    <string name="tools_alarm_describe_set">设闹钟：%1$s</string>
+    <string name="tools_alarm_describe_set_label">设闹钟：%1$s %2$s</string>
+    <string name="tools_alarm_describe_repeat">%1$s，%2$s重复</string>
+    <string name="tools_timer_describe">开始计时：%1$s</string>
+    <string name="tools_timer_describe_label">开始计时：%1$s（%2$s）</string>
+    <string name="tools_contacts_describe_dial">打开拨号盘：%1$s（由你自己按下拨出）</string>
+</resources>

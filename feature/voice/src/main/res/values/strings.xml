@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_settings_title">Voice</string>
+
+    <string name="voice_section_messages">Her voice messages</string>
+    <string name="voice_section_input">Voice input</string>
+    <string name="voice_section_storage">Storage</string>
+
+    <string name="voice_tts_missing_title">No voice model set up</string>
+    <string name="voice_tts_missing_summary">Add a text-to-speech model in model settings to get voice messages from her</string>
+    <string name="voice_tts_missing_fallback">Using the phone\'s built-in voice for now. Add a text-to-speech model in model settings for a better voice</string>
+    <string name="voice_tts_model">Voice model</string>
+
+    <string name="voice_frequency">How often she sends voice</string>
+    <string name="voice_frequency_never">Never</string>
+    <string name="voice_frequency_sometimes">Occasionally</string>
+    <string name="voice_frequency_often">Often</string>
+    <string name="voice_frequency_always">Every reply</string>
+
+    <string name="voice_daily_limit">Daily limit</string>
+    <string name="voice_daily_limit_summary">%1$d per day, %2$d sent today. Beyond this she writes in text</string>
+    <string name="voice_daily_limit_value">%1$d per day</string>
+
+    <string name="voice_system_fallback">Use system voice instead</string>
+    <string name="voice_system_fallback_summary">When no voice model is set up, use the phone\'s built-in text-to-speech</string>
+
+    <string name="voice_sample">Listen to a sample</string>
+    <string name="voice_sample_summary">Hear how her voice sounds with the current settings</string>
+    <string name="voice_sample_text">Hi, it\'s me. How was your day?</string>
+    <string name="voice_sample_unavailable">Set up a voice model or turn on system voice first</string>
+    <string name="voice_sample_failed">Couldn\'t make the sample. Check the voice model settings</string>
+
+    <string name="voice_input_engine">Speech recognition</string>
+    <string name="voice_input_system">The phone\'s built-in speech recognition</string>
+
+    <string name="voice_cache_size">Voice files</string>
+    <string name="voice_cache_clean">Clear voice older than 30 days</string>
+    <string name="voice_cache_clean_summary">Those messages will show their text instead</string>
+    <string name="voice_cache_clean_confirm_title">Clear old voice messages?</string>
+    <string name="voice_cache_clean_confirm_text">Audio older than 30 days will be deleted. Those messages will show their text instead. This can\'t be undone.</string>
+    <string name="voice_cache_clean_confirm">Clear</string>
+    <string name="voice_cache_nothing">Nothing to clear</string>
+    <plurals name="voice_cache_cleaned">
+        <item quantity="one">Cleared %1$d voice file</item>
+        <item quantity="other">Cleared %1$d voice files</item>
+    </plurals>
+    <string name="voice_dialog_cancel">Cancel</string>
+
+    <string name="voice_recording">Recording…</string>
+    <string name="voice_play">Play voice message</string>
+    <string name="voice_play_seconds">Play voice message, %1$d seconds</string>
+    <string name="voice_pause">Pause</string>
+    <string name="voice_duration_seconds">%1$d″</string>
+    <string name="voice_show_text">Show text</string>
+    <string name="voice_hide_text">Hide text</string>
+
+    <string name="voice_mic_start">Voice input</string>
+    <string name="voice_mic_stop">Stop and recognize</string>
+    <string name="voice_mic_transcribing">Recognizing…</string>
+    <string name="voice_mic_permission_denied">Microphone permission is needed for voice input</string>
+    <string name="voice_mic_no_speech">Didn\'t catch that. Try again?</string>
+    <string name="voice_mic_network">Recognition failed: network problem</string>
+    <string name="voice_mic_unavailable">Speech recognition isn\'t available right now</string>
+    <string name="voice_mic_failed">Recognition failed</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 界面全部由 Compose 绘制，这里只定启动瞬间的窗口底色。 -->
+    <style name="Theme.Starmate" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <color name="window_background">#FFFBFA</color>
+    <color name="ic_launcher_background">#F4A7B9</color>
+</resources>

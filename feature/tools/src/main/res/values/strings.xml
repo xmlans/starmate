@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tools_settings_title">Phone tools</string>
+    <string name="tools_settings_intro">Each group is off by default. When on, she only looks when the conversation needs it. Choose \"Let her always know\" to add one line of context to every chat. The data only goes to the model provider you set up.</string>
+
+    <string name="tools_group_calendar">Calendar</string>
+    <string name="tools_group_alarm">Alarms &amp; timers</string>
+    <string name="tools_group_contacts">Contacts</string>
+    <string name="tools_group_location">Location &amp; weather</string>
+    <string name="tools_group_health">Health</string>
+    <string name="tools_group_music">Music</string>
+
+    <string name="tools_group_calendar_sees">The title, time and place of events in a time range she asks about (up to 31 days, 20 events). With your confirmation she can add events to your main calendar. If she always knows, she sees up to 3 of today\'s remaining events.</string>
+    <string name="tools_group_alarm_sees">The time of your next alarm. With your confirmation, and only while the app is open, she can set alarms and timers in your clock app.</string>
+    <string name="tools_group_contacts_sees">Only the name, phone numbers and birthday of up to 5 contacts that match a name she looks up. Contacts are never sent in bulk. With your confirmation she can open the dialer; you press call yourself.</string>
+    <string name="tools_group_location_sees">Your approximate coordinates and city, and the weather there. Location is only read while the app is open; in the background she uses the last saved location. Weather comes from Open-Meteo.</string>
+    <string name="tools_group_health_sees">Your sleep times and daily steps from Health Connect. If Health Connect has no steps, the phone\'s step counter is used as a backup.</string>
+    <string name="tools_group_music_sees">The song, artist and app currently playing, and the last 50 songs. It uses notification access only to see media sessions and never reads notification content.</string>
+
+    <string name="tools_status_off">Off</string>
+    <string name="tools_status_missing">Needs permission</string>
+    <string name="tools_status_on_demand">Only when needed</string>
+    <string name="tools_status_ambient">Always knows</string>
+
+    <string name="tools_detail_what_she_sees">What she can see</string>
+    <string name="tools_detail_enable">Turn on</string>
+    <string name="tools_detail_mode">How much she knows</string>
+    <string name="tools_mode_on_demand">Only when needed</string>
+    <string name="tools_mode_on_demand_desc">She checks only when the conversation is about it</string>
+    <string name="tools_mode_ambient">Let her always know</string>
+    <string name="tools_mode_ambient_desc">One short line is added to every chat, such as today\'s steps</string>
+    <string name="tools_detail_permission">Permission</string>
+    <string name="tools_permission_granted">Granted</string>
+    <string name="tools_permission_missing">Not granted yet</string>
+    <string name="tools_location_permission_note">Approximate location is enough. Background location is never requested.</string>
+    <string name="tools_grant">Grant</string>
+    <string name="tools_open_app_settings">App settings</string>
+
+    <string name="tools_city_title">Set a city instead</string>
+    <string name="tools_city_desc">If you would rather not share your location, enter a city and the weather will use it.</string>
+    <string name="tools_city_hint">City</string>
+    <string name="tools_city_save">Save</string>
+    <string name="tools_city_clear">Clear</string>
+    <string name="tools_city_saved">City set to %1$s</string>
+    <string name="tools_city_not_found">No city with that name was found</string>
+    <string name="tools_city_failed">Lookup failed. Check your connection.</string>
+
+    <string name="tools_hc_title">Health Connect</string>
+    <string name="tools_hc_available">Health Connect is available.</string>
+    <string name="tools_hc_needs_update">Health Connect needs an update before it can be used.</string>
+    <string name="tools_hc_unavailable">Health Connect is not available on this phone. You can install it and come back. Steps can still come from the phone\'s step counter.</string>
+    <string name="tools_hc_install">Install or update</string>
+    <string name="tools_hc_open">Open Health Connect</string>
+    <string name="tools_hc_rationale_title">How Starmate uses health data</string>
+    <string name="tools_hc_rationale_body">Starmate reads only your sleep sessions and step counts, and only when you have turned on the Health group. The numbers are sent, as part of a chat request, to the AI model provider you configured yourself, so your companion can ask how you slept or notice an active day. Starmate never writes health data, never shares it with anyone else and has no server of its own. You can turn the group off or revoke access in Health Connect at any time.</string>
+
+    <string name="tools_music_listener_label">Starmate music</string>
+    <string name="tools_music_restricted_hint">On Android 13 and later, if the switch is greyed out, allow restricted settings first.</string>
+    <string name="tools_restricted_title">Allow restricted settings</string>
+    <string name="tools_restricted_intro">Android 13 and later block notification access for apps installed outside an app store until you allow restricted settings. Starmate needs notification access only to see what music is playing.</string>
+    <string name="tools_restricted_steps">Steps</string>
+    <string name="tools_restricted_step1">Try turning on notification access for Starmate once. If it is greyed out, continue.</string>
+    <string name="tools_restricted_step2">Open Starmate\'s App info page.</string>
+    <string name="tools_restricted_step3">Tap the ⋮ menu in the top corner and choose \"Allow restricted settings\", then confirm.</string>
+    <string name="tools_restricted_step4">Go back to notification access and turn on Starmate music.</string>
+    <string name="tools_restricted_open">Open App info</string>
+    <string name="tools_restricted_open_listener">Notification access</string>
+
+    <string name="tools_invite_location_title">Location &amp; weather</string>
+    <string name="tools_invite_location_desc">She knows your city and the weather there. Approximate location is enough.</string>
+    <string name="tools_invite_calendar_title">Calendar</string>
+    <string name="tools_invite_calendar_desc">She knows what is on your schedule today.</string>
+    <string name="tools_invite_health_title">Health</string>
+    <string name="tools_invite_health_desc">She knows how you slept and how much you walked.</string>
+    <string name="tools_invite_music_title">Music</string>
+    <string name="tools_invite_music_desc">She knows what song you are listening to.</string>
+
+    <string name="tools_calendar_describe_create">Add event: %1$s %2$s</string>
+    <string name="tools_calendar_describe_create_no_time">Add event: %1$s</string>
+    <string name="tools_alarm_describe_set">Set alarm: %1$s</string>
+    <string name="tools_alarm_describe_set_label">Set alarm: %1$s %2$s</string>
+    <string name="tools_alarm_describe_repeat">%1$s, repeats %2$s</string>
+    <string name="tools_timer_describe">Start timer: %1$s</string>
+    <string name="tools_timer_describe_label">Start timer: %1$s (%2$s)</string>
+    <string name="tools_contacts_describe_dial">Open dialer with %1$s (you press call)</string>
+</resources>

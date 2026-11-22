@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mcp_settings_title">联网服务</string>
+    <string name="mcp_settings_intro">用你自己的 key 接入联网搜索和地图。每个服务默认关闭，它们的工具只在聊天时提供，返回的内容只当作资料。key 加密保存在这台手机上，只发给对应的服务。</string>
+    <string name="mcp_tavily_title">Tavily 联网搜索</string>
+    <string name="mcp_tavily_desc">让她能搜索网页、读取网页内容。key 在 tavily.com 申请。</string>
+    <string name="mcp_amap_title">高德地图</string>
+    <string name="mcp_amap_desc">让她能查地点、路线和天气（中国大陆）。key 在 lbs.amap.com 申请。</string>
+    <string name="mcp_enable">启用</string>
+    <string name="mcp_key_label">API key</string>
+    <string name="mcp_key_saved">已保存（不显示）</string>
+    <string name="mcp_key_save">保存</string>
+    <string name="mcp_key_clear">删除 key</string>
+    <string name="mcp_test">测试</string>
+    <string name="mcp_status_not_configured">还没有填 key</string>
+    <string name="mcp_status_unchecked">还没有检查</string>
+    <string name="mcp_status_ok">正常，%1$d 个工具</string>
+    <string name="mcp_status_failed">连接失败：%1$s</string>
+    <string name="mcp_reason_unauthorized">key 无效或已过期</string>
+    <string name="mcp_reason_http">服务返回 HTTP %1$d</string>
+    <string name="mcp_reason_unreachable">连不上服务</string>
+    <string name="mcp_reason_timeout">30 秒内没有回应</string>
+    <string name="mcp_reason_protocol">返回的数据看不懂</string>
+    <string name="mcp_tools_found">工具：%1$s</string>
+    <string name="mcp_describe_call">%1$s：%2$s</string>
+    <string name="mcp_confirm_call">让%1$s执行 %2$s，发送的内容：%3$s</string>
+</resources>

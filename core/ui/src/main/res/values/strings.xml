@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_back">Back</string>
+    <string name="core_cancel">Cancel</string>
+    <string name="core_confirm">OK</string>
+
+    <string name="core_accent_pink">Blush pink</string>
+    <string name="core_accent_blue">Sky blue</string>
+    <string name="core_accent_purple">Lavender</string>
+    <string name="core_accent_green">Mint</string>
+    <string name="core_accent_orange">Apricot</string>
+</resources>
