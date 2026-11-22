@@ -2,6 +2,8 @@
 
 跑在 Android 上的 AI 伴侣。使用你自己的模型 API key，没有服务器：聊天、记忆、日记都只存在你的手机上。
 
+介绍页：<https://starmate.xmyun.org>
+
 <p>
   <img src="docs/screenshots/chat-pink-light.png" width="250" alt="聊天页（浅色）">
   <img src="docs/screenshots/chat-pink-dark.png" width="250" alt="聊天页（深色）">

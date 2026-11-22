@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://starmate.xmyun.org/sitemap.xml

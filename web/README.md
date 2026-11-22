@@ -1,5 +1,7 @@
 # 星伴介绍页
 
+线上地址：<https://starmate.xmyun.org>
+
 纯静态页面，不需要构建，把整个 `web` 文件夹放到任何静态托管上就能用。
 
 | 文件 | 内容 |
@@ -8,6 +10,7 @@
 | `style.css` | 样式，浅色和深色两套配色 |
 | `main.js` | 浅色/深色切换、进场动画、从 GitHub Releases 读取最新安装包 |
 | `assets/` | 图标、压缩后的截图、字体子集和字体许可 |
+| `robots.txt`、`sitemap.xml` | 给搜索引擎的说明，里面写着线上地址 |
 | `tools/build_assets.py` | 重新生成截图和字体子集 |
 
 ## 本地预览
@@ -41,5 +44,12 @@ python web/tools/build_assets.py
 
 ## 托管
 
-- **自己的服务器或任意静态托管**：上传 `web` 文件夹的内容。
-- **GitHub Pages**：Pages 的“从分支部署”只支持仓库根目录或 `docs` 文件夹，要发布 `web` 文件夹需要用 GitHub Actions 部署。
+现在用 GitHub Pages 发布，绑定域名 `starmate.xmyun.org`：
+
+- `.github/workflows/pages.yml` 在 `main` 分支的 `web/` 有改动时自动发布，也可以在 Actions 页面手动运行。发布时会去掉 `tools/` 和这份 README。
+- 仓库 Settings → Pages 的 Source 选 **GitHub Actions**，Custom domain 填 `starmate.xmyun.org`。
+- DNS 里有一条 CNAME：`starmate` 指向 `xmlans.github.io`。
+
+换域名的话，同时改 `index.html` 里的 `canonical`、`og:url` 和 `url`，以及 `robots.txt`、`sitemap.xml`。
+
+也可以放到自己的服务器或任意静态托管上，上传 `web` 文件夹的内容即可。
