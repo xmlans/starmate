@@ -2,7 +2,9 @@
 
 生效日期：2026 年 11 月 21 日
 
-星伴（Starmate）是一款 Android 上的 AI 伴侣应用。本政策适用于星伴的所有版本（正式版、Beta 版和 Google Play 版）。联系开发者：support@xmyun.org
+星伴（Starmate）是一款 Android 上的 AI 伴侣应用，由开发者“兰酱qwq”开发。本政策适用于星伴的所有版本（正式版、Beta 版和 Google Play 版）。
+
+开发者：兰酱qwq　联系方式：support@xmyun.org
 
 ## 一句话说明
 
@@ -73,7 +75,9 @@
 
 Effective date: November 21, 2026
 
-Starmate is an AI companion app for Android. This policy covers every edition of Starmate (stable, beta and the Google Play edition). Contact: support@xmyun.org
+Starmate is an AI companion app for Android, developed by 兰酱qwq. This policy covers every edition of Starmate (stable, beta and the Google Play edition).
+
+Developer: 兰酱qwq · Contact: support@xmyun.org
 
 ## In short
 

@@ -791,6 +791,74 @@ code {
 .footer-note { grid-column: 1 / -1; color: var(--ink-mute); font-size: 13px; }
 .footer-note a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 
+/* ---------- 隐私政策页 ---------- */
+.policy-page { padding-top: 28px; }
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px 8px 12px;
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+.back-link:hover { background: var(--brand-soft); color: var(--brand-strong); text-decoration: none; }
+.policy-hero { margin-top: 28px; text-align: center; }
+.policy-hero h1 { margin-top: 6px; font-size: clamp(34px, 5vw, 48px); }
+.lang-switch { display: inline-flex; gap: 8px; margin-top: 22px; }
+.lang-switch a {
+  padding: 8px 20px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  font-family: var(--font-display);
+  font-size: 16px;
+}
+.lang-switch a:hover { background: var(--brand); color: var(--on-brand); text-decoration: none; }
+
+.policy {
+  margin-top: 40px;
+  padding: 44px 48px 48px;
+  border-radius: var(--radius-xl);
+  background: var(--paper);
+  font-size: 16px;
+  line-height: 1.85;
+}
+.policy h2 { font-size: clamp(26px, 3.4vw, 32px); }
+.policy h2 + p { margin-top: 8px; color: var(--ink-mute); font-size: 14px; }
+.policy h3 { margin: 36px 0 4px; font-size: 22px; }
+.policy h4 { margin: 26px 0 2px; font-size: 19px; }
+.policy p { margin-top: 10px; }
+.policy h3:first-of-type + p {
+  margin-top: 12px;
+  padding: 18px 22px;
+  border-radius: var(--radius-md);
+  background: var(--brand-soft);
+  color: var(--ink);
+}
+.policy ul, .policy ol { margin: 10px 0 0; padding-left: 1.5em; }
+.policy li { margin-top: 6px; padding-left: 4px; }
+.policy li::marker { color: var(--brand); }
+.policy strong { color: var(--ink); font-family: var(--font-display); font-weight: 400; }
+.table-wrap {
+  margin-top: 14px;
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  background: var(--card);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.policy table { width: 100%; min-width: 440px; border-collapse: collapse; font-size: 15px; line-height: 1.7; }
+.policy th, .policy td {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+.policy th { color: var(--ink); font-family: var(--font-display); font-weight: 400; }
+.policy td:first-child { width: 34%; color: var(--ink); }
+.policy tbody tr:last-child td { border-bottom: 0; }
+
 /* ---------- 进入视口时轻轻浮上来（只在脚本可用时隐藏） ---------- */
 .js .reveal:not(.in) { opacity: 0; transform: translateY(18px); }
 .reveal { transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1); }
@@ -860,6 +928,7 @@ code {
   .privacy-points { grid-template-columns: 1fr; }
   .edition { padding: 26px 22px 22px; }
   .cta { padding: 48px 20px; border-radius: 32px; }
+  .policy { padding: 30px 20px 32px; border-radius: 28px; font-size: 15.5px; }
   .footer-inner { grid-template-columns: 1fr; }
 }
 

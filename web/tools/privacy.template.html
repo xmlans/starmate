@@ -1,0 +1,104 @@
+<!doctype html>
+<!-- 由 web/tools/build_assets.py 用 web/tools/privacy.template.html 和仓库根目录的 PRIVACY.md 生成，不要直接编辑。 -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐私政策 · 星伴 Starmate</title>
+  <meta name="description" content="星伴 Starmate 的隐私政策：没有服务器，不收集任何数据，聊天、记忆和日记只存在你的手机上。Starmate privacy policy.">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131121" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://starmate.xmyun.org/privacy.html">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/kuaile.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/round.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      var saved = localStorage.getItem('starmate-theme');
+      if (saved === 'light' || saved === 'dark') document.documentElement.setAttribute('data-theme', saved);
+    } catch (e) {}
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5c.5 4.6 2.9 7 7.5 7.5-4.6.5-7 2.9-7.5 7.5-.5-4.6-2.9-7-7.5-7.5 4.6-.5 7-2.9 7.5-7.5Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 18l-6-6 6-6"/></symbol>
+    <symbol id="i-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main">跳到正文</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="./" aria-label="星伴 Starmate 首页">
+        <img src="assets/icon.svg" width="36" height="36" alt="">
+        <span class="brand-name">星伴</span>
+        <span class="brand-en">Starmate</span>
+      </a>
+      <nav class="nav-links" aria-label="页面导航">
+        <a href="./#features">功能</a>
+        <a href="./#privacy">隐私</a>
+        <a href="./#download">下载</a>
+        <a href="./#faq">常见问题</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="pill-btn" href="https://github.com/xmlans/starmate" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>
+          <span>GitHub</span>
+          <span class="stars" data-stars hidden></span>
+        </a>
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="切换到深色">
+          <svg class="ico ico-line show-light" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="ico ico-line show-dark" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap narrow policy-page">
+    <a class="back-link" href="./">
+      <svg class="ico ico-line" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+      回到首页
+    </a>
+    <header class="policy-hero">
+      <p class="kicker">Privacy Policy</p>
+      <h1>隐私政策</h1>
+      <p class="section-sub">星伴没有服务器，不收集你的任何数据。下面是完整说明，中英文内容相同。</p>
+      <nav class="lang-switch" aria-label="选择语言">
+        <a href="#zh">中文</a>
+        <a href="#en" lang="en">English</a>
+      </nav>
+    </header>
+
+    <!-- POLICY -->
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="assets/icon.svg" width="32" height="32" alt="">
+        <div>
+          <strong>星伴 Starmate</strong>
+          <span>愿她陪你度过每一个普通的日子 ✦</span>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="页脚链接">
+        <a href="./">首页</a>
+        <a href="https://github.com/xmlans/starmate" rel="noopener">GitHub</a>
+        <a href="https://github.com/xmlans/starmate/releases" rel="noopener">全部版本</a>
+        <a href="https://github.com/xmlans/starmate/issues" rel="noopener">问题反馈</a>
+      </nav>
+      <p class="footer-note">
+        本页内容与仓库中的 <a href="https://github.com/xmlans/starmate/blob/HEAD/PRIVACY.md" rel="noopener">PRIVACY.md</a> 相同。
+        页面字体为站酷快乐体和寒蝉半圆体的子集，均以 <a href="assets/fonts/LICENSES.md">SIL OFL 1.1</a> 授权。
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

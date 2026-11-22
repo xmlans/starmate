@@ -1,19 +1,24 @@
-"""Regenerate the images and font subsets used by the Starmate web page.
+"""Regenerate the privacy page, images and font subsets used by the Starmate website.
 
 Run from anywhere:  python web/tools/build_assets.py
 Needs:              pip install fonttools brotli pillow
 
 What it does
-  1. Screenshots: docs/screenshots/*.png -> web/assets/shots/*.webp, scaled to 540 px wide.
-  2. Fonts: subsets the two fonts the app bundles (core/ui/src/main/res/font) down to the
-     characters used in web/index.html and web/main.js, saved as WOFF2.
+  1. Privacy page: renders PRIVACY.md (repository root) into web/privacy.html using
+     web/tools/privacy.template.html, so the policy has a single source.
+  2. Screenshots: docs/screenshots/*.png -> web/assets/shots/*.webp, scaled to 540 px wide.
+  3. Fonts: subsets the two fonts the app bundles (core/ui/src/main/res/font) down to the
+     characters used in web/index.html, web/privacy.html and web/main.js, saved as WOFF2.
      ChillRoundM declares the Reserved Font Names "ChillRoundF" and "ChillRoundM", and a subset
      is a Modified Version under the SIL OFL, so the subset is renamed to "Starmate Round".
-  3. Copies both OFL licence texts next to the fonts.
+  4. Copies both OFL licence texts next to the fonts.
 
-Run it again after changing the page text, otherwise new characters fall back to a system font.
+Run it again after changing PRIVACY.md or the page text, otherwise the privacy page is stale
+and new characters fall back to a system font.
 """
 from pathlib import Path
+import html
+import re
 import shutil
 import string
 
@@ -30,6 +35,91 @@ SHOT_OUT = WEB / "assets" / "shots"
 
 SHOT_WIDTH = 540
 EXTRA_CHARS = "“”‘’…·—–、。，！？：；（）《》【】～"
+PAGES = ("index.html", "privacy.html", "main.js")
+
+
+# ---------- privacy page ----------
+# PRIVACY.md only uses headings, paragraphs, bullet and numbered lists, tables, **bold**,
+# `code` and a "---" line between the Chinese and English halves, so a small converter is enough.
+
+EMAIL = re.compile(r"([A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z]{2,})+)")
+BULLET = re.compile(r"^[-*] ")
+NUMBERED = re.compile(r"^\d+\. ")
+
+
+def inline(text):
+    out = html.escape(text, quote=False)
+    out = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", out)
+    out = re.sub(r"`([^`]+)`", r"<code>\1</code>", out)
+    return EMAIL.sub(r'<a href="mailto:\1">\1</a>', out)
+
+
+def table(rows):
+    cells = [[c.strip() for c in row.strip().strip("|").split("|")] for row in rows]
+    head, body = cells[0], cells[2:]  # cells[1] is the |---| separator
+    parts = ['<div class="table-wrap"><table>', "<thead><tr>"]
+    parts += [f"<th>{inline(c)}</th>" for c in head]
+    parts.append("</tr></thead><tbody>")
+    for row in body:
+        parts.append("<tr>" + "".join(f"<td>{inline(c)}</td>" for c in row) + "</tr>")
+    parts.append("</tbody></table></div>")
+    return "".join(parts)
+
+
+def blocks(lines):
+    out, paragraph, i = [], [], 0
+
+    def flush():
+        if paragraph:
+            out.append(f"<p>{inline(' '.join(paragraph))}</p>")
+            paragraph.clear()
+
+    while i < len(lines):
+        line = lines[i].strip()
+        heading = re.match(r"^(#{1,3}) (.+)$", line)
+        if not line:
+            flush()
+            i += 1
+        elif heading:
+            flush()
+            tag = {1: "h2", 2: "h3", 3: "h4"}[len(heading.group(1))]
+            out.append(f"<{tag}>{inline(heading.group(2))}</{tag}>")
+            i += 1
+        elif line.startswith("|"):
+            flush()
+            rows = []
+            while i < len(lines) and lines[i].strip().startswith("|"):
+                rows.append(lines[i])
+                i += 1
+            out.append(table(rows))
+        elif BULLET.match(line) or NUMBERED.match(line):
+            flush()
+            marker = BULLET if BULLET.match(line) else NUMBERED
+            tag = "ul" if marker is BULLET else "ol"
+            items = []
+            while i < len(lines) and marker.match(lines[i].strip()):
+                items.append(marker.sub("", lines[i].strip()))
+                i += 1
+            out.append(f"<{tag}>" + "".join(f"<li>{inline(t)}</li>" for t in items) + f"</{tag}>")
+        else:
+            paragraph.append(line)
+            i += 1
+    flush()
+    return "\n".join(out)
+
+
+def build_privacy():
+    source = (REPO / "PRIVACY.md").read_text(encoding="utf-8")
+    halves = re.split(r"^---\s*$", source, flags=re.M)
+    if len(halves) != 2:
+        raise SystemExit("PRIVACY.md should have exactly one '---' line between Chinese and English")
+    articles = []
+    for (anchor, lang), text in zip((("zh", "zh-CN"), ("en", "en")), halves):
+        articles.append(f'<article class="policy" id="{anchor}" lang="{lang}">\n{blocks(text.splitlines())}\n</article>')
+    template = (WEB / "tools" / "privacy.template.html").read_text(encoding="utf-8")
+    page = template.replace("<!-- POLICY -->", "\n\n".join(articles))
+    (WEB / "privacy.html").write_text(page, encoding="utf-8", newline="\n")
+    print(f"  privacy.html: {len(page) / 1024:.0f} KB")
 
 
 def build_shots():
@@ -46,7 +136,7 @@ def build_shots():
 
 def page_text():
     chars = set(string.printable[:95]) | set(EXTRA_CHARS)
-    for name in ("index.html", "main.js"):
+    for name in PAGES:
         chars |= set((WEB / name).read_text(encoding="utf-8"))
     return "".join(sorted(c for c in chars if c.isprintable() or c == " "))
 
@@ -109,6 +199,8 @@ def build_fonts():
 
 
 if __name__ == "__main__":
+    print("privacy page")
+    build_privacy()
     print("screenshots")
     build_shots()
     print("fonts")
